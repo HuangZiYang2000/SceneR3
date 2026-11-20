@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#16141a">
+<meta name="description" content="SceneR³ — Relation-Guided Self-Improvement for Editable 3D Scene Reconstruction. Camera-matched Real / Blender videos and reconstructed-scene walkthroughs.">
+<meta name="author" content="Ziyang Huang, Kaiming Xu, Yizhao Han, Xiaoxiao Long">
+<title>SceneR³ — Relation-Guided Self-Improvement for Editable 3D Scene Reconstruction</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css?v=screening">
+<script defer src="viewer.js?v=screening"></script>
+</head>
+<body>
+<a class="skip" href="#videos">Skip to results</a>
+<header class="hero">
+  <video id="cover-film" class="cover-film" muted playsinline loop preload="none" poster="assets/stills/cover-reel.jpg" aria-hidden="true" tabindex="-1"><source src="assets/films/cover-reel.mp4" type="video/mp4"></video>
+  <div class="intro">
+    <h1 aria-label="SceneR³">SceneR<sup>3</sup></h1>
+    <p class="subtitle">Relation-Guided Self-Improvement for Editable 3D Scene Reconstruction</p>
+    <p class="authors"><span>Ziyang Huang</span><span>Kaiming Xu</span><span>Yizhao Han</span><span>Xiaoxiao Long</span></p>
+    <p class="affiliation">Nanjing University</p>
+    <ul class="resources" aria-label="Project resources"><li>arXiv <small>Coming soon</small></li><li>Code <small>Coming soon</small></li></ul>
+  </div>
+  <a class="watch" href="#videos">Explore videos<span aria-hidden="true"></span></a>
+  <button class="cover-toggle" id="cover-toggle" type="button" hidden aria-label="Play background video">Play background</button>
+</header>
+<main id="videos">
+  <h2>Videos</h2>
+  <div class="gallery">
+    <nav class="contents" aria-label="Scenes"><a href="#cafe" data-scene="cafe">Café</a>
+<a href="#room" data-scene="room">Living Room</a>
+<a href="#cafe2" data-scene="cafe2">cafe2</a>
+<a href="#cinema" data-scene="cinema">Home Cinema</a>
+<a href="#hotel" data-scene="hotel">Hotel Room</a>
+<a href="#dining" data-scene="dining">Dining Room</a></nav>
+    <div class="scene-list"><article class="scene" id="cafe" aria-labelledby="cafe-title" data-mode="comparison">
+  <header class="scene-heading">
+    <h3 id="cafe-title">Café</h3>
+    <nav class="modes" aria-label="Café video format">
+      <a href="#cafe/comparison" data-mode="comparison" aria-current="true">Real / Blender</a>
+      <a href="#cafe/walkthrough" data-mode="walkthrough">Walkthrough</a>
+    </nav>
+  </header>
+  <div class="screen">
+    <video class="film" controls muted playsinline preload="none" width="1920" height="540" poster="assets/stills/cafe-comparison.jpg" src="assets/films/cafe-comparison.mp4" aria-label="Café — Real / Blender"></video>
+  </div>
+  <p class="film-error" role="status" hidden>Playback unavailable. <a href="assets/films/cafe-comparison.mp4">Open video file</a></p>
+  <noscript><p><a href="assets/films/cafe-comparison.mp4">Open comparison</a> · <a href="assets/films/cafe-walkthrough.mp4">Open walkthrough</a></p></noscript>
+</article>
+<article class="scene" id="room" aria-labelledby="room-title" data-mode="comparison">
+  <header class="scene-heading">
+    <h3 id="room-title">Living Room</h3>
+    <nav class="modes" aria-label="Living Room video format">
+      <a href="#room/comparison" data-mode="comparison" aria-current="true">Real / Blender</a>
+      <a href="#room/walkthrough" data-mode="walkthrough">Walkthrough</a>
+    </nav>
+  </header>
+  <div class="screen">
+    <video class="film" controls muted playsinline preload="none" width="1512" height="504" poster="assets/stills/room-comparison.jpg" src="assets/films/room-comparison.mp4" aria-label="Living Room — Real / Blender"></video>
+  </div>
+  <p class="film-error" role="status" hidden>Playback unavailable. <a href="assets/films/room-comparison.mp4">Open video file</a></p>
+  <noscript><p><a href="assets/films/room-comparison.mp4">Open comparison</a> · <a href="assets/films/room-walkthrough.mp4">Open walkthrough</a></p></noscript>
+</article>
+<article class="scene" id="cafe2" aria-labelledby="cafe2-title" data-mode="comparison">
+  <header class="scene-heading">
+    <h3 id="cafe2-title">cafe2</h3>
+    <nav class="modes" aria-label="cafe2 video format">
+      <a href="#cafe2/comparison" data-mode="comparison" aria-current="true">Real / Blender</a>
+      <a href="#cafe2/walkthrough" data-mode="walkthrough">Walkthrough</a>
+    </nav>
+  </header>
+  <div class="screen">
+    <video class="film" controls muted playsinline preload="none" width="1296" height="484" poster="assets/stills/cafe2-comparison.jpg" src="assets/films/cafe2-comparison.mp4" aria-label="cafe2 — Real / Blender"></video>
+  </div>
+  <p class="film-error" role="status" hidden>Playback unavailable. <a href="assets/films/cafe2-comparison.mp4">Open video file</a></p>
+  <noscript><p><a href="assets/films/cafe2-comparison.mp4">Open comparison</a> · <a href="assets/films/cafe2-walkthrough.mp4">Open walkthrough</a></p></noscript>
+</article>
+<article class="scene" id="cinema" aria-labelledby="cinema-title" data-mode="comparison">
+  <header class="scene-heading">
+    <h3 id="cinema-title">Home Cinema</h3>
+    <nav class="modes" aria-label="Home Cinema video format">
+      <a href="#cinema/comparison" data-mode="comparison" aria-current="true">Real / Blender</a>
+      <a href="#cinema/walkthrough" data-mode="walkthrough">Walkthrough</a>
+    </nav>
+  </header>
+  <div class="screen">
+    <video class="film" controls muted playsinline preload="none" width="1920" height="540" poster="assets/stills/cinema-comparison.jpg" src="assets/films/cinema-comparison.mp4" aria-label="Home Cinema — Real / Blender"></video>
+  </div>
+  <p class="film-error" role="status" hidden>Playback unavailable. <a href="assets/films/cinema-comparison.mp4">Open video file</a></p>
+  <noscript><p><a href="assets/films/cinema-comparison.mp4">Open comparison</a> · <a href="assets/films/cinema-walkthrough.mp4">Open walkthrough</a></p></noscript>
+</article>
+<article class="scene" id="hotel" aria-labelledby="hotel-title" data-mode="comparison">
+  <header class="scene-heading">
+    <h3 id="hotel-title">Hotel Room</h3>
+    <nav class="modes" aria-label="Hotel Room video format">
+      <a href="#hotel/comparison" data-mode="comparison" aria-current="true">Real / Blender</a>
+      <a href="#hotel/walkthrough" data-mode="walkthrough">Walkthrough</a>
+    </nav>
+  </header>
+  <div class="screen">
+    <video class="film" controls muted playsinline preload="none" width="1920" height="540" poster="assets/stills/hotel-comparison.jpg" src="assets/films/hotel-comparison.mp4" aria-label="Hotel Room — Real / Blender"></video>
+  </div>
+  <p class="film-error" role="status" hidden>Playback unavailable. <a href="assets/films/hotel-comparison.mp4">Open video file</a></p>
+  <noscript><p><a href="assets/films/hotel-comparison.mp4">Open comparison</a> · <a href="assets/films/hotel-walkthrough.mp4">Open walkthrough</a></p></noscript>
+</article>
+<article class="scene" id="dining" aria-labelledby="dining-title" data-mode="comparison">
+  <header class="scene-heading">
+    <h3 id="dining-title">Dining Room</h3>
+    <nav class="modes" aria-label="Dining Room video format">
+      <a href="#dining/comparison" data-mode="comparison" aria-current="true">Real / Blender</a>
+      <a href="#dining/walkthrough" data-mode="walkthrough">Walkthrough</a>
+    </nav>
+  </header>
+  <div class="screen">
+    <video class="film" controls muted playsinline preload="none" width="1920" height="540" poster="assets/stills/dining-comparison.jpg" src="assets/films/dining-comparison.mp4" aria-label="Dining Room — Real / Blender"></video>
+  </div>
+  <p class="film-error" role="status" hidden>Playback unavailable. <a href="assets/films/dining-comparison.mp4">Open video file</a></p>
+  <noscript><p><a href="assets/films/dining-comparison.mp4">Open comparison</a> · <a href="assets/films/dining-walkthrough.mp4">Open walkthrough</a></p></noscript>
+</article></div>
+  </div>
+</main>
+<script type="application/json" id="catalog">[{"id":"cafe","title":"Café","walkthrough":{"file":"assets/films/cafe-walkthrough.mp4","poster":"assets/stills/cafe-walkthrough.jpg","width":960,"height":540,"fps":24.0,"frames":720,"duration":30.0},"comparison":{"file":"assets/films/cafe-comparison.mp4","poster":"assets/stills/cafe-comparison.jpg","width":1920,"height":540,"fps":24.0,"frames":361,"duration":15.041667}},{"id":"room","title":"Living Room","walkthrough":{"file":"assets/films/room-walkthrough.mp4","poster":"assets/stills/room-walkthrough.jpg","width":1280,"height":720,"fps":24.0,"frames":572,"duration":23.833333},"comparison":{"file":"assets/films/room-comparison.mp4","poster":"assets/stills/room-comparison.jpg","width":1512,"height":504,"fps":24.0,"frames":311,"duration":12.958333}},{"id":"cafe2","title":"cafe2","walkthrough":{"file":"assets/films/cafe2-walkthrough.mp4","poster":"assets/stills/cafe2-walkthrough.jpg","width":1280,"height":720,"fps":30.0,"frames":870,"duration":29.0},"comparison":{"file":"assets/films/cafe2-comparison.mp4","poster":"assets/stills/cafe2-comparison.jpg","width":1296,"height":484,"fps":30.0,"frames":4228,"duration":140.933333}},{"id":"cinema","title":"Home Cinema","walkthrough":{"file":"assets/films/cinema-walkthrough.mp4","poster":"assets/stills/cinema-walkthrough.jpg","width":960,"height":540,"fps":24.0,"frames":720,"duration":30.0},"comparison":{"file":"assets/films/cinema-comparison.mp4","poster":"assets/stills/cinema-comparison.jpg","width":1920,"height":540,"fps":24.0,"frames":369,"duration":15.375}},{"id":"hotel","title":"Hotel Room","walkthrough":{"file":"assets/films/hotel-walkthrough.mp4","poster":"assets/stills/hotel-walkthrough.jpg","width":960,"height":540,"fps":24.0,"frames":720,"duration":30.0},"comparison":{"file":"assets/films/hotel-comparison.mp4","poster":"assets/stills/hotel-comparison.jpg","width":1920,"height":540,"fps":24.0,"frames":411,"duration":17.125}},{"id":"dining","title":"Dining Room","walkthrough":{"file":"assets/films/dining-walkthrough.mp4","poster":"assets/stills/dining-walkthrough.jpg","width":960,"height":540,"fps":24.0,"frames":720,"duration":30.0},"comparison":{"file":"assets/films/dining-comparison.mp4","poster":"assets/stills/dining-comparison.jpg","width":1920,"height":540,"fps":24.0,"frames":379,"duration":15.791667}}]</script>
+</body>
+</html>
