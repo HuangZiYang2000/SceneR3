@@ -81,3 +81,4 @@ main > h2 { margin-bottom: clamp(1.5rem,3.5vw,3.5rem); text-align: center; font-
   .modes a { padding: .4rem .64rem; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+@media (max-width: 350px) { .scene { scroll-margin-top: 9.5rem; } }
