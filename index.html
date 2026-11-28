@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#16141a">
 <meta name="description" content="ScenePact: Relation-Guided Cooperative Repair for Editable 3D Scene Reconstruction. Camera-matched Real / Blender videos and reconstructed-scene walkthroughs.">
-<meta name="author" content="Ziyang Huang, Kaiming Xu, Yizhao Han, Xiaoxiao Long">
+<meta name="author" content="Ziyang Huang, Kaiming Xu, Yizhao Han, Xuan Yang, Xiaoxiao Long">
 <title>ScenePact: Relation-Guided Cooperative Repair for Editable 3D Scene Reconstruction</title>
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="styles.css?v=scenepact-replica">
@@ -18,7 +18,7 @@
   <div class="intro">
     <h1>ScenePact</h1>
     <p class="subtitle">Relation-Guided Cooperative Repair for Editable 3D Scene Reconstruction</p>
-    <p class="authors"><span>Ziyang Huang</span><span>Kaiming Xu</span><span>Yizhao Han</span><span>Xiaoxiao Long</span></p>
+    <p class="authors"><span>Ziyang Huang</span><span>Kaiming Xu</span><span>Yizhao Han</span><span>Xuan Yang</span><span>Xiaoxiao Long</span></p>
     <p class="affiliation">Nanjing University</p>
     <ul class="resources" aria-label="Project resources"><li>arXiv <small>Coming soon</small></li><li>Code <small>Coming soon</small></li></ul>
   </div>
@@ -34,9 +34,9 @@
 <a href="#cinema" data-scene="cinema">Home Cinema</a>
 <a href="#hotel" data-scene="hotel">Hotel Room</a>
 <a href="#dining" data-scene="dining">Dining Room</a>
-<a href="#room1" data-scene="room1">Room 1</a>
-<a href="#room2" data-scene="room2">Room 2</a>
-<a href="#room3" data-scene="room3">Room 3</a></nav>
+<a href="#room1" data-scene="room1">Replica Room 1</a>
+<a href="#room2" data-scene="room2">Replica Room 2</a>
+<a href="#room3" data-scene="room3">Replica Room 3</a></nav>
     <div class="scene-list"><article class="scene" id="cafe" aria-labelledby="cafe-title" data-mode="comparison">
   <header class="scene-heading">
     <h3 id="cafe-title">Café</h3>
@@ -123,10 +123,10 @@
 </article>
 <article class="scene" id="room1" aria-labelledby="room1-title" data-mode="comparison">
   <header class="scene-heading">
-    <h3 id="room1-title">Room 1</h3>
+    <h3 id="room1-title">Replica Room 1</h3>
   </header>
   <div class="screen screen--replica">
-    <video class="film" controls muted playsinline preload="none" width="1536" height="1024" poster="assets/stills/room1-comparison.jpg" src="assets/films/room1-comparison.mp4" aria-label="Room 1 — Method comparison" aria-describedby="room1-methods"></video>
+    <video class="film" controls muted playsinline preload="none" width="1536" height="1024" poster="assets/stills/room1-comparison.jpg" src="assets/films/room1-comparison.mp4" aria-label="Replica Room 1 — Method comparison" aria-describedby="room1-methods"></video>
     <ol class="method-labels" id="room1-methods" aria-label="Methods in reading order">
       <li>Reference</li>
       <li>Replicate<wbr>AnyScene</li>
@@ -141,10 +141,10 @@
 </article>
 <article class="scene" id="room2" aria-labelledby="room2-title" data-mode="comparison">
   <header class="scene-heading">
-    <h3 id="room2-title">Room 2</h3>
+    <h3 id="room2-title">Replica Room 2</h3>
   </header>
   <div class="screen screen--replica">
-    <video class="film" controls muted playsinline preload="none" width="1536" height="1024" poster="assets/stills/room2-comparison.jpg" src="assets/films/room2-comparison.mp4" aria-label="Room 2 — Method comparison" aria-describedby="room2-methods"></video>
+    <video class="film" controls muted playsinline preload="none" width="1536" height="1024" poster="assets/stills/room2-comparison.jpg" src="assets/films/room2-comparison.mp4" aria-label="Replica Room 2 — Method comparison" aria-describedby="room2-methods"></video>
     <ol class="method-labels" id="room2-methods" aria-label="Methods in reading order">
       <li>Reference</li>
       <li>Replicate<wbr>AnyScene</li>
@@ -159,10 +159,10 @@
 </article>
 <article class="scene" id="room3" aria-labelledby="room3-title" data-mode="comparison">
   <header class="scene-heading">
-    <h3 id="room3-title">Room 3</h3>
+    <h3 id="room3-title">Replica Room 3</h3>
   </header>
   <div class="screen screen--replica">
-    <video class="film" controls muted playsinline preload="none" width="1536" height="1024" poster="assets/stills/room3-comparison.jpg" src="assets/films/room3-comparison.mp4" aria-label="Room 3 — Method comparison" aria-describedby="room3-methods"></video>
+    <video class="film" controls muted playsinline preload="none" width="1536" height="1024" poster="assets/stills/room3-comparison.jpg" src="assets/films/room3-comparison.mp4" aria-label="Replica Room 3 — Method comparison" aria-describedby="room3-methods"></video>
     <ol class="method-labels" id="room3-methods" aria-label="Methods in reading order">
       <li>Reference</li>
       <li>Replicate<wbr>AnyScene</li>
@@ -177,6 +177,6 @@
 </article></div>
   </div>
 </main>
-<script type="application/json" id="catalog">[{"id":"cafe","title":"Café","walkthrough":{"file":"assets/films/cafe-walkthrough.mp4","poster":"assets/stills/cafe-walkthrough.jpg","width":960,"height":540,"fps":24.0,"frames":720,"duration":30.0},"comparison":{"file":"assets/films/cafe-comparison.mp4","poster":"assets/stills/cafe-comparison.jpg","width":1920,"height":540,"fps":24.0,"frames":361,"duration":15.041667}},{"id":"room","title":"Living Room","walkthrough":{"file":"assets/films/room-walkthrough.mp4","poster":"assets/stills/room-walkthrough.jpg","width":1280,"height":720,"fps":24.0,"frames":572,"duration":23.833333},"comparison":{"file":"assets/films/room-comparison.mp4","poster":"assets/stills/room-comparison.jpg","width":1512,"height":504,"fps":24.0,"frames":311,"duration":12.958333}},{"id":"cafe2","title":"cafe2","walkthrough":{"file":"assets/films/cafe2-walkthrough.mp4","poster":"assets/stills/cafe2-walkthrough.jpg","width":1280,"height":720,"fps":30.0,"frames":870,"duration":29.0},"comparison":{"file":"assets/films/cafe2-comparison.mp4","poster":"assets/stills/cafe2-comparison.jpg","width":1296,"height":484,"fps":30.0,"frames":4228,"duration":140.933333}},{"id":"cinema","title":"Home Cinema","walkthrough":{"file":"assets/films/cinema-walkthrough.mp4","poster":"assets/stills/cinema-walkthrough.jpg","width":960,"height":540,"fps":24.0,"frames":720,"duration":30.0},"comparison":{"file":"assets/films/cinema-comparison.mp4","poster":"assets/stills/cinema-comparison.jpg","width":1920,"height":540,"fps":24.0,"frames":369,"duration":15.375}},{"id":"hotel","title":"Hotel Room","walkthrough":{"file":"assets/films/hotel-walkthrough.mp4","poster":"assets/stills/hotel-walkthrough.jpg","width":960,"height":540,"fps":24.0,"frames":720,"duration":30.0},"comparison":{"file":"assets/films/hotel-comparison.mp4","poster":"assets/stills/hotel-comparison.jpg","width":1920,"height":540,"fps":24.0,"frames":411,"duration":17.125}},{"id":"dining","title":"Dining Room","walkthrough":{"file":"assets/films/dining-walkthrough.mp4","poster":"assets/stills/dining-walkthrough.jpg","width":960,"height":540,"fps":24.0,"frames":720,"duration":30.0},"comparison":{"file":"assets/films/dining-comparison.mp4","poster":"assets/stills/dining-comparison.jpg","width":1920,"height":540,"fps":24.0,"frames":379,"duration":15.791667}},{"id":"room1","title":"Room 1","comparison":{"file":"assets/films/room1-comparison.mp4","poster":"assets/stills/room1-comparison.jpg","width":1536,"height":1024,"fps":30.0,"frames":811,"duration":27.033}},{"id":"room2","title":"Room 2","comparison":{"file":"assets/films/room2-comparison.mp4","poster":"assets/stills/room2-comparison.jpg","width":1536,"height":1024,"fps":30.0,"frames":731,"duration":24.366667}},{"id":"room3","title":"Room 3","comparison":{"file":"assets/films/room3-comparison.mp4","poster":"assets/stills/room3-comparison.jpg","width":1536,"height":1024,"fps":30.0,"frames":371,"duration":12.366}}]</script>
+<script type="application/json" id="catalog">[{"id":"cafe","title":"Café","walkthrough":{"file":"assets/films/cafe-walkthrough.mp4","poster":"assets/stills/cafe-walkthrough.jpg","width":960,"height":540,"fps":24.0,"frames":720,"duration":30.0},"comparison":{"file":"assets/films/cafe-comparison.mp4","poster":"assets/stills/cafe-comparison.jpg","width":1920,"height":540,"fps":24.0,"frames":361,"duration":15.041667}},{"id":"room","title":"Living Room","walkthrough":{"file":"assets/films/room-walkthrough.mp4","poster":"assets/stills/room-walkthrough.jpg","width":1280,"height":720,"fps":24.0,"frames":572,"duration":23.833333},"comparison":{"file":"assets/films/room-comparison.mp4","poster":"assets/stills/room-comparison.jpg","width":1512,"height":504,"fps":24.0,"frames":311,"duration":12.958333}},{"id":"cafe2","title":"cafe2","walkthrough":{"file":"assets/films/cafe2-walkthrough.mp4","poster":"assets/stills/cafe2-walkthrough.jpg","width":1280,"height":720,"fps":30.0,"frames":870,"duration":29.0},"comparison":{"file":"assets/films/cafe2-comparison.mp4","poster":"assets/stills/cafe2-comparison.jpg","width":1296,"height":484,"fps":30.0,"frames":4228,"duration":140.933333}},{"id":"cinema","title":"Home Cinema","walkthrough":{"file":"assets/films/cinema-walkthrough.mp4","poster":"assets/stills/cinema-walkthrough.jpg","width":960,"height":540,"fps":24.0,"frames":720,"duration":30.0},"comparison":{"file":"assets/films/cinema-comparison.mp4","poster":"assets/stills/cinema-comparison.jpg","width":1920,"height":540,"fps":24.0,"frames":369,"duration":15.375}},{"id":"hotel","title":"Hotel Room","walkthrough":{"file":"assets/films/hotel-walkthrough.mp4","poster":"assets/stills/hotel-walkthrough.jpg","width":960,"height":540,"fps":24.0,"frames":720,"duration":30.0},"comparison":{"file":"assets/films/hotel-comparison.mp4","poster":"assets/stills/hotel-comparison.jpg","width":1920,"height":540,"fps":24.0,"frames":411,"duration":17.125}},{"id":"dining","title":"Dining Room","walkthrough":{"file":"assets/films/dining-walkthrough.mp4","poster":"assets/stills/dining-walkthrough.jpg","width":960,"height":540,"fps":24.0,"frames":720,"duration":30.0},"comparison":{"file":"assets/films/dining-comparison.mp4","poster":"assets/stills/dining-comparison.jpg","width":1920,"height":540,"fps":24.0,"frames":379,"duration":15.791667}},{"id":"room1","title":"Replica Room 1","comparison":{"file":"assets/films/room1-comparison.mp4","poster":"assets/stills/room1-comparison.jpg","width":1536,"height":1024,"fps":30.0,"frames":811,"duration":27.033}},{"id":"room2","title":"Replica Room 2","comparison":{"file":"assets/films/room2-comparison.mp4","poster":"assets/stills/room2-comparison.jpg","width":1536,"height":1024,"fps":30.0,"frames":731,"duration":24.366667}},{"id":"room3","title":"Replica Room 3","comparison":{"file":"assets/films/room3-comparison.mp4","poster":"assets/stills/room3-comparison.jpg","width":1536,"height":1024,"fps":30.0,"frames":371,"duration":12.366}}]</script>
 </body>
 </html>
