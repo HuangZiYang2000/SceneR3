@@ -22,9 +22,10 @@
     else link.removeAttribute('aria-current');
   }
   function displayMode(section, mode) {
-    if (mode === section.dataset.mode) return;
+    const scene = scenes.get(section.id);
+    if (!scene[mode] || mode === section.dataset.mode) return;
     const film = section.querySelector('.film');
-    const asset = scenes.get(section.id)[mode];
+    const asset = scene[mode];
     const resume = !film.paused || (auto && activeFilm === film);
     section.dataset.mode = mode;
     section.querySelectorAll('.modes a').forEach(link => mark(link, link.dataset.mode === mode));
@@ -57,8 +58,11 @@
     if (coverWanted && coverVisible) play(cover);
     else cover.pause();
     let target = null;
+    const selectedId = location.hash.slice(1).split('/')[0];
     for (const [film, ratio] of fractions) {
-      if (ratio > .3 && (!target || ratio > fractions.get(target))) target = film;
+      if (ratio <= .3) continue;
+      const best = fractions.get(target) ?? 0;
+      if (ratio > best || (ratio === best && film.closest('.scene').id === selectedId)) target = film;
     }
     if (activeFilm && activeFilm !== target) activeFilm.pause();
     activeFilm = target;
